@@ -17,7 +17,7 @@ export default function SyntheraWebsite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
       <header className="p-6 text-center">
-        <img src="/logo.synthera..png" alt="Synthera Logo" className="mx-auto w-20 mb-4" />
+        <img src="/logo.synthera.png" alt="Synthera Logo" className="mx-auto w-20 mb-4" />
         <h1 className="text-4xl font-bold">Welcome to Synthera</h1>
         <p className="text-xl mt-2 text-slate-300">
           AI-driven molecular discovery. Join the beta and shape the future of drug design.
