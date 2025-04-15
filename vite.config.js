@@ -7,4 +7,9 @@ const repoName = 'synthera-website'
 export default defineConfig({
   base: `/synthera-website/`,
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 })
