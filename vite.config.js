@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// IMPORTANT: Replace this with your actual repo name!
-const repoName = 'synthera-website'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src')  // Ensure this is correctly set
+    }
+  }
 });
