@@ -18,17 +18,26 @@ export default function SyntheraWebsite() {
           AI-driven molecular discovery. Join the beta and shape the future of drug design.
         </p>
       </header>
+
       <section className="p-6 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="border rounded-lg p-6">
+        {/* Request Beta Access Card */}
+        <div className="bg-slate-950 rounded-xl shadow-md p-6">
           <h2 className="text-2xl font-semibold mb-4">🚀 Request Beta Access</h2>
           <form className="grid gap-4">
-            <input type="text" placeholder="Name" className="border rounded-md p-2" required />
-            <input type="email" placeholder="Email" className="border rounded-md p-2" required />
-            <textarea placeholder="Affiliation / Institution" className="border rounded-md p-2" />
-            <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md">Join Beta</button>
+            <input type="text" placeholder="Name" required className="p-2 rounded-md text-black" />
+            <input type="email" placeholder="Email" required className="p-2 rounded-md text-black" />
+            <textarea placeholder="Affiliation / Institution" className="p-2 rounded-md text-black" />
+            <button
+              type="submit"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md"
+            >
+              Join Beta
+            </button>
           </form>
         </div>
-        <div className="border rounded-lg p-6">
+
+        {/* Core Capabilities Card */}
+        <div className="bg-slate-950 rounded-xl shadow-md p-6">
           <h2 className="text-2xl font-semibold mb-4">🔬 Core Capabilities</h2>
           <div className="grid grid-cols-2 gap-4">
             {icons.map(({ icon, title }) => (
@@ -40,6 +49,7 @@ export default function SyntheraWebsite() {
           </div>
         </div>
       </section>
+
       <section className="px-6 py-10 max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">🧠 How Synthera Works</h2>
         <p className="text-lg text-slate-300 mb-4">
@@ -49,14 +59,25 @@ export default function SyntheraWebsite() {
           Hosted on Azure, Synthera integrates transformer-based models, GNNs, VAEs, and docking tools to provide a comprehensive drug design pipeline. Our goal is to democratize next-gen therapeutics for researchers worldwide.
         </p>
       </section>
+
       <section className="bg-slate-950 px-6 py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">🗞️ Stay Updated</h2>
         <p className="text-lg mb-6">Sign up to receive news on product updates, research, and publications.</p>
         <form className="flex justify-center space-x-2 max-w-md mx-auto">
-          <input type="email" placeholder="Enter your email" className="bg-white text-black p-2 rounded-md" />
-          <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md">Subscribe</button>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="bg-white text-black p-2 rounded-md flex-1"
+          />
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md"
+          >
+            Subscribe
+          </button>
         </form>
       </section>
+
       <footer className="p-6 text-center text-sm text-slate-400">
         © {new Date().getFullYear()} Synthera. All rights reserved.
       </footer>
