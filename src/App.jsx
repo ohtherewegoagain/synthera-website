@@ -1,9 +1,9 @@
 
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card.jsx";
-import { Button } from "@/components/ui/button.jsx";
-import { Input } from "@/components/ui/input.jsx";
-import { Textarea } from "@/components/ui/textarea.jsx";
+import { Card, CardContent } from "src/components/ui/card.jsx";
+import { Button } from "src/components/ui/button.jsx";
+import { Input } from "src/components/ui/input.jsx";
+import { Textarea } from "src/components/ui/textarea.jsx";
 import { Mail, FlaskConical, Microscope, Rocket } from "lucide-react";
 
 const icons = [
