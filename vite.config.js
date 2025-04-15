@@ -6,14 +6,4 @@ const repoName = 'synthera-website'
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  },
-  build: {
-    rollupOptions: {
-      external: ['@/components/ui/card.jsx']  // Externalize the card.jsx module
-    }
-  }
 });
